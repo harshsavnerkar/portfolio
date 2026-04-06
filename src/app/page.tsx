@@ -2,16 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
-import CursorGlow from "@/components/layout/CursorGlow";
 import LogoLoader from "@/components/ui/LogoLoader";
 import Hero from "@/components/sections/Hero";
+import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
-import Testimonials from "@/components/sections/Testimonials";
 import ParticleBackground from "@/components/ui/ParticleBackground";
 import { AnimatePresence } from "framer-motion";
 
@@ -46,19 +45,16 @@ export default function Home() {
           showLoader ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
-        {/* Cursor Glow Effect */}
-        <CursorGlow />
-
         {/* Navigation */}
         <Navbar showIntro={false} />
 
         {/* Home Sections */}
         <Hero />
+        <Stats />
         <About />
         <Skills />
         <Projects />
         <Experience />
-        <Testimonials />
         <Contact />
         <Footer />
       </div>

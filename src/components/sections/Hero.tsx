@@ -124,7 +124,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
           >
-            <span className="text-gray-400">I build </span>
+            <span className="text-gray-400">I am a </span>
             <span className="text-white ml-2">{displayedText}</span>
             <motion.span
               className="inline-block w-0.5 h-8 bg-neon-blue ml-1.5 opacity-80"
