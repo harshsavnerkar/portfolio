@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
-import { socialLinks, personalInfo } from "@/utils/constants";
+import { socialLinks } from "@/utils/constants";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
